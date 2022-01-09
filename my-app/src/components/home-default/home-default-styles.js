@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import imagebackground from "../../assets/images/background-3.svg";
-
+// background-position-x: right;
 export const Background = styled.div`
   position: absolute;
   width: 100%;
@@ -11,6 +11,7 @@ export const Background = styled.div`
   background-image: url(${imagebackground});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: right;
 `;
 
 export const Main = styled.main`
@@ -22,6 +23,8 @@ export const Main = styled.main`
 
   display: flex;
   justify-content: center;
+
+  max-width: 1000px;
 `;
 
 export const LeftColumn = styled.div`
@@ -34,23 +37,12 @@ export const LeftColumn = styled.div`
   align-items: center;
 
   gap: 4%;
-
-  .tooltip {
-    width: 35%;
-    height: 12%;
-    position: relative;
-    display: inline-block;
-  }
-
-  .GoToText {
-    display: none;
-    text-decoration: underline;
-  }
-
-  .tooltip:hover .tooltiptext {
-    display: flex;
-  }
 `;
+
+// @media(min-width: 600px) {
+// background:red;
+// visibility:visible;
+// }
 
 export const RightColumn = styled.div`
   width: 92%;
@@ -83,16 +75,31 @@ export const Description = styled.p`
 `;
 
 export const Icon = styled.img`
-  width: 100%;
+  width: 50%;
   cursor: pointer;
+
+  &:hover,
+  .tooltip {
+    display: flex;
+  }
+
+  
+  @media (max-width: 360px) {
+    width: 90%;
+    margin-left:25%;
+  }
 `;
 
 export const BTN = styled.div`
-  width: 35%;
+  width: 50%;
   height: 10%;
   display: flex;
   justify-content: space-around;
   padding-left: 4%;
+
+  @media (max-width: 360px) {
+    width: 90%;
+  }
 `;
 
 export const Btn_myjobs = styled.button`
@@ -129,6 +136,12 @@ export const Line = styled.div`
   left: 18%;
   top: 32%;
   border: 0.5px solid #ffffff;
+
+  @media (max-width: 360px) {
+    border: 0.1px solid #ffffff;
+    left: 58%;
+    top: 31.55%;
+}
 `;
 
 // export const Tooltip = styled.div`
@@ -138,7 +151,16 @@ export const Line = styled.div`
 //   display: inline-block;
 // `;
 
-// export const GoToText = styled.span`
-//   visibility: hidden;
-//   text-decoration: underline;
-// `;
+export const GoToText = styled.span`
+  text-decoration: underline;
+  color: #ffffff;
+  position: absolute;
+  font-size: 1.2em;
+
+  top: ${(props) => props.top};
+  left: ${(props) => props.left};
+
+  display: none;
+`;
+
+// visibility: hidden;

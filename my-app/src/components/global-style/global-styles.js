@@ -28,4 +28,12 @@ export const GlobalStyle = createGlobalStyle`
   
   }
 
+  a{
+    width:100%;
+    height:fit-content;
+
+    display: flex;
+    justify-content: center;
+  }
+
 `
