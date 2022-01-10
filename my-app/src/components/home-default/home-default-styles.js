@@ -110,6 +110,7 @@ export const Btn_myjobs = styled.button`
   color: #ffffff;
   border: none;
   font-size: 1.2em;
+  border-radius:3px;
 
   &:hover {
     background: #ac46fd;
@@ -124,6 +125,8 @@ export const Btn_aboutme = styled.button`
   color: #ffffff;
   border: none;
   font-size: 1.2em;
+  border-radius:3px;
+
 
   &:hover {
     background: #ac46fd;
