@@ -5,7 +5,7 @@ export const Text = styled.p`
     max-width: 400px;
     margin-left:5%;
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1.2em;
 `;
 
 export const Arrow = styled.image`
