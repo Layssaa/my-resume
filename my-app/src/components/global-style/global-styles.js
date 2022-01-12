@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import imageCursor from "../../assets/images/mouse.svg";
+
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -8,7 +10,6 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration:none;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-
   }
 
   #root, body{
@@ -29,11 +30,27 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a{
-    width:100%;
+    width:fit-content;
     height:fit-content;
 
     display: flex;
     justify-content: center;
+    color:inherit;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;              
+  }
+
+  body::-webkit-scrollbar-track {
+      background: none;    
+      border-radius: 20px;   
+  }
+
+  body::-webkit-scrollbar-thumb {
+      background-color: #141416;    
+      border-radius: 20px;      
+      border: 3px solid #191A1F;  
   }
 
 `

@@ -2,25 +2,16 @@ import {
   Background,
   Icon,
   LeftColumn,
-  Main,
   RightColumn,
-  TitleName,
-  Description,
-  Btn_myjobs,
-  Btn_aboutme,
-  BTN,
-  Info,
   Line,
   GoToText,
+  Main,
 } from "./components/home-default/home-default-styles";
 import icon_linkedin from "./assets/images/linkedin.png";
 import icon_github from "./assets/images/github.png";
-import { useState } from "react";
+import { MainContent } from "./modules/module-main";
 
 export default function App() {
-  const [openGithub, setOpenGitHub] = useState(false);
-  const [openLinkedin, setOpenLinkedin] = useState(false);
-
   return (
     <>
       <Background />
@@ -48,17 +39,10 @@ export default function App() {
         </LeftColumn>
 
         <RightColumn>
-          <Info>
-            <TitleName>Layssa Lima</TitleName>
-            <Description>full stack web developer</Description>
-          </Info>
-          <BTN>
-            <Btn_myjobs>My Jobs</Btn_myjobs>
-            <Btn_aboutme>About Me</Btn_aboutme>
-          </BTN>
+          <MainContent />
         </RightColumn>
+        <Line />
       </Main>
-      <Line />
     </>
   );
 }

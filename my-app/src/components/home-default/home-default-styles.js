@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imagebackground from "../../assets/images/background-3.svg";
+
 // background-position-x: right;
 export const Background = styled.div`
   position: absolute;
@@ -112,6 +113,10 @@ export const Btn_myjobs = styled.button`
   font-size: 1.2em;
   border-radius:3px;
 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
   &:hover {
     background: #ac46fd;
   }
@@ -127,6 +132,9 @@ export const Btn_aboutme = styled.button`
   font-size: 1.2em;
   border-radius:3px;
 
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
   &:hover {
     background: #ac46fd;
@@ -140,11 +148,12 @@ export const Line = styled.div`
   top: 32%;
   border: 0.5px solid #ffffff;
 
-  @media (max-width: 360px) {
+  @media (max-width: 960px) {
     border: 0.1px solid #ffffff;
     left: 58%;
-    top: 31.55%;
-}
+    top: 31%;
+    visibility: hidden;
+  }
 `;
 
 // export const Tooltip = styled.div`
