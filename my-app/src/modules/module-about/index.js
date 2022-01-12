@@ -51,7 +51,7 @@ export const About = () => {
           <TitleName style={{marginLeft:"5%"}}>About me</TitleName>
           <Text>
             Sou estudante de engenharia e desenvolvedora web full stack pela
-            Alpha Edtech. No tempo livre eu estudo, assisto, desenho e tento
+            Alpha Edtech. No tempo livre eu estudo, desenho e tento
             desenvolver alguma coisa legal.
           </Text>
           {/* <Arrow src={arrow}/> */}
