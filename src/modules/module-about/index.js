@@ -1,5 +1,4 @@
 import {
-  Background,
   GoToText,
   Icon,
   LeftColumn,
@@ -13,6 +12,7 @@ import icon_linkedin from "../../assets/images/linkedin.png";
 import icon_github from "../../assets/images/github.png";
 import arrow from "../../assets/images/arrow.png";
 import { useNavigate } from "react-router-dom";
+import { BackgroundContainer } from "../../components/background/background";
 
 
 export const About = () => {
@@ -23,7 +23,7 @@ export const About = () => {
   
   return (
     <>
-      <Background />
+      <BackgroundContainer />
       <Main>
         <LeftColumn>
           <a

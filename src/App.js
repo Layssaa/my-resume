@@ -1,5 +1,4 @@
 import {
-  Background,
   Icon,
   LeftColumn,
   RightColumn,
@@ -10,11 +9,12 @@ import {
 import icon_linkedin from "./assets/images/linkedin.png";
 import icon_github from "./assets/images/github.png";
 import { MainContent } from "./modules/module-main";
+import { BackgroundContainer } from "./components/background/background";
 
 export default function App() {
   return (
     <>
-      <Background />
+      <BackgroundContainer />
       <Main>
         <LeftColumn>
           <a
