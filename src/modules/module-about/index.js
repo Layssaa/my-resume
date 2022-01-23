@@ -6,13 +6,11 @@ import {
   RightColumn,
   TitleName,
 } from "../../global-components/home-default/home-default-styles";
-import { Arrow, BackTo, Text } from "./components/about.styles";
+import { BackTo, Text } from "./components/about.styles";
 
-import icon_linkedin from "../../assets/images/linkedin.png";
-import icon_github from "../../assets/images/github.png";
-import arrow from "../../assets/images/arrow.png";
 import { useNavigate } from "react-router-dom";
 import { BackgroundContainer } from "../../global-components/background/background";
+import { Column } from "../../global-components/left-column/left-column";
 
 
 export const About = () => {
@@ -25,28 +23,8 @@ export const About = () => {
     <>
       <BackgroundContainer />
       <Main>
-        <LeftColumn>
-          <a
-            href="https://www.linkedin.com/in/layssa-lima/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            <Icon src={icon_linkedin} />
-          </a>
-          <GoToText top="83%" left="7%" className="tooltip">
-            Go to Linkedin!
-          </GoToText>
-
-          <a href="https://github.com/Layssaa" target="_blank" rel="noreferrer">
-            {" "}
-            <Icon src={icon_github} />
-          </a>
-          <GoToText top="93%" left="7%" className="tooltip">
-            Go to Github!
-          </GoToText>
-        </LeftColumn>
-
+        <Column/>
+      
         <RightColumn>
           <TitleName style={{marginLeft:"5%"}}>About me</TitleName>
           <Text>
