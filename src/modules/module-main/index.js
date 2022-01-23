@@ -6,7 +6,7 @@ import {
   Description,
   Info,
   TitleName,
-} from "../../components/home-default/home-default-styles";
+} from "../../global-components/home-default/home-default-styles";
 
 export const MainContent = () => {
   const navigate = useNavigate();

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-let randomLeft = () =>{
-    return Math.random() * 30;
-}
+let randomLeft = () => {
+  return Math.random() * 30;
+};
 
 const starAnimation = keyframes`
-    0% { left: ${randomLeft()}%; opacity:1; }
-    100% { left: 97%; opacity:0.2;}
+    0% { top:30%; left: ${randomLeft()}%; opacity:1; }
+    100% { top:85%; left: 97%; opacity:0.2;}
 `;
 
 export const StarIn = styled.div`
@@ -48,7 +48,6 @@ export const StarOut = styled.div`
 `;
 
 const lessHeight = (_number) => {
-    console.log('aaaaaaaaaaa');
   let random = Math.random() * 100;
   if (random === _number) {
     random = Math.random() * 100;

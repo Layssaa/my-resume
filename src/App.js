@@ -5,11 +5,11 @@ import {
   Line,
   GoToText,
   Main,
-} from "./components/home-default/home-default-styles";
+} from "./global-components/home-default/home-default-styles";
 import icon_linkedin from "./assets/images/linkedin.png";
 import icon_github from "./assets/images/github.png";
 import { MainContent } from "./modules/module-main";
-import { BackgroundContainer } from "./components/background/background";
+import { BackgroundContainer } from "./global-components/background/background";
 
 export default function App() {
   return (

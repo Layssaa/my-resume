@@ -5,14 +5,14 @@ import {
   Main,
   RightColumn,
   TitleName,
-} from "../../components/home-default/home-default-styles";
+} from "../../global-components/home-default/home-default-styles";
 import { Arrow, BackTo, Text } from "./components/about.styles";
 
 import icon_linkedin from "../../assets/images/linkedin.png";
 import icon_github from "../../assets/images/github.png";
 import arrow from "../../assets/images/arrow.png";
 import { useNavigate } from "react-router-dom";
-import { BackgroundContainer } from "../../components/background/background";
+import { BackgroundContainer } from "../../global-components/background/background";
 
 
 export const About = () => {
