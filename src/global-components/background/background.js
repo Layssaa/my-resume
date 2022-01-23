@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Astronaut } from "../astronaut/astronaut.styles.js";
 import { Star } from "../star/star.js";
 import { Background } from "./background.styles.js";
 

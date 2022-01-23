@@ -1,7 +1,4 @@
 import {
-  GoToText,
-  Icon,
-  LeftColumn,
   Main,
   RightColumn,
   TitleName,
