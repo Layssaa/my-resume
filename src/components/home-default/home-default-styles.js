@@ -145,7 +145,7 @@ export const Line = styled.div`
   position: absolute;
   width: 20%;
   left: 18%;
-  top: 32%;
+  top: 34%;
   border: 0.5px solid #ffffff;
 
   @media (max-width: 960px) {
