@@ -50,7 +50,8 @@ export const Jobs = () => {
             Estudante de engenharia e desenvolvedora web full stack. No tempo
             livre estudo, desenho e desenvolvo alguma coisa divertida.
           </Text> */}
-          <Arrow src={arrow}/>
+          <Arrow src={arrow}/>´
+          <p>outro teste</p>
           <BackTo onClick={goPage}>voltar</BackTo>
         </RightColumn>
         <p>teste branch</p>
